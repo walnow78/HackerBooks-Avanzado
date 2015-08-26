@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14D136" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Author" representedClassName="POLAuthor" syncable="YES">
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <relationship name="book" toMany="YES" deletionRule="Nullify" destinationEntity="Book" inverseName="author" inverseEntity="Book" syncable="YES"/>
+    </entity>
+    <entity name="Book" representedClassName="POLBook" syncable="YES">
+        <attribute name="isFavorite" attributeType="Boolean" syncable="YES"/>
+        <attribute name="title" attributeType="String" syncable="YES"/>
+        <attribute name="urlImage" attributeType="String" syncable="YES"/>
+        <attribute name="urlPdf" attributeType="String" syncable="YES"/>
+        <relationship name="author" toMany="YES" deletionRule="Nullify" destinationEntity="Author" inverseName="book" inverseEntity="Author" syncable="YES"/>
+        <relationship name="image" maxCount="1" deletionRule="Nullify" destinationEntity="Image" inverseName="book" inverseEntity="Image" syncable="YES"/>
+        <relationship name="note" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Note" inverseName="book" inverseEntity="Note" syncable="YES"/>
+        <relationship name="pdf" maxCount="1" deletionRule="Nullify" destinationEntity="Pdf" inverseName="book" inverseEntity="Pdf" syncable="YES"/>
+        <relationship name="tag" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Tag" inverseName="book" inverseEntity="Tag" syncable="YES"/>
+    </entity>
+    <entity name="Image" representedClassName="POLImage" syncable="YES">
+        <attribute name="file" optional="YES" attributeType="Binary" storedInTruthFile="YES" syncable="YES"/>
+        <relationship name="book" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Book" inverseName="image" inverseEntity="Book" syncable="YES"/>
+        <relationship name="locatation" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Location" inverseName="image" inverseEntity="Location" syncable="YES"/>
+        <relationship name="note" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Note" inverseName="image" inverseEntity="Note" syncable="YES"/>
+    </entity>
+    <entity name="Location" representedClassName="POLLocation" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="image" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Image" inverseName="locatation" inverseEntity="Image" syncable="YES"/>
+        <relationship name="note" maxCount="1" deletionRule="Nullify" destinationEntity="Note" inverseName="location" inverseEntity="Note" syncable="YES"/>
+    </entity>
+    <entity name="Note" representedClassName="POLNote" syncable="YES">
+        <attribute name="creationDate" attributeType="Date" syncable="YES"/>
+        <attribute name="modificationDate" attributeType="Date" syncable="YES"/>
+        <attribute name="text" attributeType="String" syncable="YES"/>
+        <attribute name="title" attributeType="String" syncable="YES"/>
+        <relationship name="book" maxCount="1" deletionRule="Nullify" destinationEntity="Book" inverseName="note" inverseEntity="Book" syncable="YES"/>
+        <relationship name="image" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Image" inverseName="note" inverseEntity="Image" syncable="YES"/>
+        <relationship name="location" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Location" inverseName="note" inverseEntity="Location" syncable="YES"/>
+    </entity>
+    <entity name="Pdf" representedClassName="POLPDF" syncable="YES">
+        <attribute name="file" optional="YES" attributeType="Binary" storedInTruthFile="YES" syncable="YES"/>
+        <relationship name="book" maxCount="1" deletionRule="Nullify" destinationEntity="Book" inverseName="pdf" inverseEntity="Book" syncable="YES"/>
+    </entity>
+    <entity name="Tag" representedClassName="POLTag" syncable="YES">
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <relationship name="book" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Book" inverseName="tag" inverseEntity="Book" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Author" positionX="-182" positionY="204" width="128" height="75"/>
+        <element name="Book" positionX="151" positionY="-54" width="128" height="178"/>
+        <element name="Image" positionX="27" positionY="-18" width="128" height="105"/>
+        <element name="Location" positionX="18" positionY="-18" width="128" height="120"/>
+        <element name="Note" positionX="340" positionY="-162" width="128" height="150"/>
+        <element name="Pdf" positionX="403" positionY="204" width="128" height="75"/>
+        <element name="Tag" positionX="-63" positionY="-135" width="128" height="73"/>
+    </elements>
+</model>

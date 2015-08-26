@@ -1,0 +1,709 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F52BD9141B166B5000253009 /* localization.png in Resources */ = {isa = PBXBuildFile; fileRef = F52BD90E1B166B5000253009 /* localization.png */; };
+		F52BD9151B166B5000253009 /* localization@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F52BD90F1B166B5000253009 /* localization@2x.png */; };
+		F52BD9161B166B5000253009 /* localization@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F52BD9101B166B5000253009 /* localization@3x.png */; };
+		F52E47CE1B187B79007FD073 /* POLPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F52E47CC1B187B79007FD073 /* POLPhotoViewController.m */; };
+		F52E47CF1B187B79007FD073 /* POLPhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F52E47CD1B187B79007FD073 /* POLPhotoViewController.xib */; };
+		F52E47D31B1A0A3E007FD073 /* no_photo.png in Resources */ = {isa = PBXBuildFile; fileRef = F52E47D01B1A0A3E007FD073 /* no_photo.png */; };
+		F52E47D41B1A0A3E007FD073 /* no_photo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F52E47D11B1A0A3E007FD073 /* no_photo@2x.png */; };
+		F52E47D51B1A0A3E007FD073 /* no_photo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F52E47D21B1A0A3E007FD073 /* no_photo@3x.png */; };
+		F52E47D81B1A143D007FD073 /* _POLNoteImage.m in Sources */ = {isa = PBXBuildFile; fileRef = F52E47D71B1A143D007FD073 /* _POLNoteImage.m */; };
+		F534F4721B1DB88C00C6E13C /* POLAnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = F534F4711B1DB88C00C6E13C /* POLAnotation.m */; };
+		F534F4751B1DBBD500C6E13C /* POLLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = F534F4741B1DBBD500C6E13C /* POLLocation.m */; };
+		F534F4781B1DBBE400C6E13C /* _POLLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = F534F4771B1DBBE400C6E13C /* _POLLocation.m */; };
+		F551F4331B0DF4A500D4B660 /* POLPDF.m in Sources */ = {isa = PBXBuildFile; fileRef = F551F4321B0DF4A500D4B660 /* POLPDF.m */; };
+		F551F4361B0DF4B600D4B660 /* _POLPDF.m in Sources */ = {isa = PBXBuildFile; fileRef = F551F4351B0DF4B600D4B660 /* _POLPDF.m */; };
+		F551F43A1B0DF83800D4B660 /* POLPDFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F551F4381B0DF83800D4B660 /* POLPDFViewController.m */; };
+		F551F43B1B0DF83800D4B660 /* POLPDFViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F551F4391B0DF83800D4B660 /* POLPDFViewController.xib */; };
+		F551F4421B0F439900D4B660 /* POLNoteCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F551F4401B0F439900D4B660 /* POLNoteCollectionViewCell.m */; };
+		F551F4431B0F439900D4B660 /* POLNoteCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F551F4411B0F439900D4B660 /* POLNoteCollectionViewCell.xib */; };
+		F551F4481B0F465500D4B660 /* _POLNote.m in Sources */ = {isa = PBXBuildFile; fileRef = F551F4471B0F465500D4B660 /* _POLNote.m */; };
+		F551F44B1B0F466900D4B660 /* POLNote.m in Sources */ = {isa = PBXBuildFile; fileRef = F551F44A1B0F466900D4B660 /* POLNote.m */; };
+		F551F4521B0F71E800D4B660 /* POLCoreDataCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F551F4501B0F71D900D4B660 /* POLCoreDataCollectionViewController.m */; };
+		F551F4551B0F724F00D4B660 /* POLNotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F551F4541B0F724F00D4B660 /* POLNotesViewController.m */; };
+		F551F4591B0F883C00D4B660 /* POLNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F551F4571B0F883C00D4B660 /* POLNoteViewController.m */; };
+		F551F45A1B0F883C00D4B660 /* POLNoteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F551F4581B0F883C00D4B660 /* POLNoteViewController.xib */; };
+		F55DAF881AF8C37D00D7B5EA /* POLBooksTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F55DAF861AF8C37D00D7B5EA /* POLBooksTableViewController.m */; };
+		F55DAF891AF8C37D00D7B5EA /* POLBooksTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F55DAF871AF8C37D00D7B5EA /* POLBooksTableViewController.xib */; };
+		F55DAF8E1AF8E57C00D7B5EA /* POLBooksTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F55DAF8C1AF8E57C00D7B5EA /* POLBooksTableViewCell.m */; };
+		F55DAF8F1AF8E57C00D7B5EA /* POLBooksTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F55DAF8D1AF8E57C00D7B5EA /* POLBooksTableViewCell.xib */; };
+		F55DAF931AF8EB9400D7B5EA /* no-image.png in Resources */ = {isa = PBXBuildFile; fileRef = F55DAF921AF8EB9400D7B5EA /* no-image.png */; };
+		F55DAF981AF9168B00D7B5EA /* POLBooksTableViewHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = F55DAF961AF9168B00D7B5EA /* POLBooksTableViewHeader.m */; };
+		F55DAF991AF9168B00D7B5EA /* POLBooksTableViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = F55DAF971AF9168B00D7B5EA /* POLBooksTableViewHeader.xib */; };
+		F55DAF9C1AF920DF00D7B5EA /* _POLImage.m in Sources */ = {isa = PBXBuildFile; fileRef = F55DAF9B1AF920DF00D7B5EA /* _POLImage.m */; };
+		F55DAF9F1AF920F300D7B5EA /* POLImage.m in Sources */ = {isa = PBXBuildFile; fileRef = F55DAF9E1AF920F300D7B5EA /* POLImage.m */; };
+		F55DAFA31AF93F8C00D7B5EA /* POLBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F55DAFA11AF93F8C00D7B5EA /* POLBookViewController.m */; };
+		F55DAFA41AF93F8C00D7B5EA /* POLBookViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F55DAFA21AF93F8C00D7B5EA /* POLBookViewController.xib */; };
+		F5D0F1681B2829CF003AED9D /* POLMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D0F1661B2829CF003AED9D /* POLMapViewController.m */; };
+		F5D0F1691B2829CF003AED9D /* POLMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5D0F1671B2829CF003AED9D /* POLMapViewController.xib */; };
+		F5E4BE751AF777A80021B1D7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E4BE741AF777A80021B1D7 /* main.m */; };
+		F5E4BE781AF777A80021B1D7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E4BE771AF777A80021B1D7 /* AppDelegate.m */; };
+		F5E4BE801AF777A80021B1D7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5E4BE7F1AF777A80021B1D7 /* Images.xcassets */; };
+		F5E4BE831AF777A80021B1D7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5E4BE811AF777A80021B1D7 /* LaunchScreen.xib */; };
+		F5E4BE8F1AF777A80021B1D7 /* HackerBookPro2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E4BE8E1AF777A80021B1D7 /* HackerBookPro2Tests.m */; };
+		F5E4BE9B1AF779360021B1D7 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F5E4BE991AF779360021B1D7 /* Model.xcdatamodeld */; };
+		F5E4BEA21AF77B350021B1D7 /* _POLAuthor.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E4BE9D1AF77B350021B1D7 /* _POLAuthor.m */; };
+		F5E4BEA31AF77B350021B1D7 /* _POLBook.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E4BE9F1AF77B350021B1D7 /* _POLBook.m */; };
+		F5E4BEA41AF77B350021B1D7 /* _POLTag.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E4BEA11AF77B350021B1D7 /* _POLTag.m */; };
+		F5E4BEAB1AF77B4C0021B1D7 /* POLAuthor.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E4BEA61AF77B4C0021B1D7 /* POLAuthor.m */; };
+		F5E4BEAC1AF77B4C0021B1D7 /* POLBook.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E4BEA81AF77B4C0021B1D7 /* POLBook.m */; };
+		F5E4BEAD1AF77B4C0021B1D7 /* POLTag.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E4BEAA1AF77B4C0021B1D7 /* POLTag.m */; };
+		F5E4BEB31AF77D970021B1D7 /* POLCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E4BEB01AF77D970021B1D7 /* POLCoreDataStack.m */; };
+		F5E4BEB41AF77D970021B1D7 /* POLCoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E4BEB21AF77D970021B1D7 /* POLCoreDataTableViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F5E4BE891AF777A80021B1D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5E4BE671AF777A80021B1D7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5E4BE6E1AF777A80021B1D7;
+			remoteInfo = HackerBookPro2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F52BD90E1B166B5000253009 /* localization.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = localization.png; sourceTree = "<group>"; };
+		F52BD90F1B166B5000253009 /* localization@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "localization@2x.png"; sourceTree = "<group>"; };
+		F52BD9101B166B5000253009 /* localization@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "localization@3x.png"; sourceTree = "<group>"; };
+		F52E47CB1B187B79007FD073 /* POLPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POLPhotoViewController.h; sourceTree = "<group>"; };
+		F52E47CC1B187B79007FD073 /* POLPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POLPhotoViewController.m; sourceTree = "<group>"; };
+		F52E47CD1B187B79007FD073 /* POLPhotoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = POLPhotoViewController.xib; sourceTree = "<group>"; };
+		F52E47D01B1A0A3E007FD073 /* no_photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = no_photo.png; sourceTree = "<group>"; };
+		F52E47D11B1A0A3E007FD073 /* no_photo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "no_photo@2x.png"; sourceTree = "<group>"; };
+		F52E47D21B1A0A3E007FD073 /* no_photo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "no_photo@3x.png"; sourceTree = "<group>"; };
+		F52E47D61B1A143D007FD073 /* _POLNoteImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _POLNoteImage.h; sourceTree = "<group>"; };
+		F52E47D71B1A143D007FD073 /* _POLNoteImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _POLNoteImage.m; sourceTree = "<group>"; };
+		F534F4701B1DB88C00C6E13C /* POLAnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POLAnotation.h; sourceTree = "<group>"; };
+		F534F4711B1DB88C00C6E13C /* POLAnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POLAnotation.m; sourceTree = "<group>"; };
+		F534F4731B1DBBD500C6E13C /* POLLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POLLocation.h; sourceTree = "<group>"; };
+		F534F4741B1DBBD500C6E13C /* POLLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POLLocation.m; sourceTree = "<group>"; };
+		F534F4761B1DBBE400C6E13C /* _POLLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _POLLocation.h; sourceTree = "<group>"; };
+		F534F4771B1DBBE400C6E13C /* _POLLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _POLLocation.m; sourceTree = "<group>"; };
+		F551F4311B0DF4A500D4B660 /* POLPDF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POLPDF.h; sourceTree = "<group>"; };
+		F551F4321B0DF4A500D4B660 /* POLPDF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POLPDF.m; sourceTree = "<group>"; };
+		F551F4341B0DF4B600D4B660 /* _POLPDF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _POLPDF.h; sourceTree = "<group>"; };
+		F551F4351B0DF4B600D4B660 /* _POLPDF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _POLPDF.m; sourceTree = "<group>"; };
+		F551F4371B0DF83800D4B660 /* POLPDFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POLPDFViewController.h; sourceTree = "<group>"; };
+		F551F4381B0DF83800D4B660 /* POLPDFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POLPDFViewController.m; sourceTree = "<group>"; };
+		F551F4391B0DF83800D4B660 /* POLPDFViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = POLPDFViewController.xib; sourceTree = "<group>"; };
+		F551F43F1B0F439900D4B660 /* POLNoteCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POLNoteCollectionViewCell.h; sourceTree = "<group>"; };
+		F551F4401B0F439900D4B660 /* POLNoteCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POLNoteCollectionViewCell.m; sourceTree = "<group>"; };
+		F551F4411B0F439900D4B660 /* POLNoteCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = POLNoteCollectionViewCell.xib; sourceTree = "<group>"; };
+		F551F4461B0F465500D4B660 /* _POLNote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _POLNote.h; sourceTree = "<group>"; };
+		F551F4471B0F465500D4B660 /* _POLNote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _POLNote.m; sourceTree = "<group>"; };
+		F551F4491B0F466900D4B660 /* POLNote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POLNote.h; sourceTree = "<group>"; };
+		F551F44A1B0F466900D4B660 /* POLNote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POLNote.m; sourceTree = "<group>"; };
+		F551F44F1B0F71D900D4B660 /* POLCoreDataCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POLCoreDataCollectionViewController.h; sourceTree = "<group>"; };
+		F551F4501B0F71D900D4B660 /* POLCoreDataCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POLCoreDataCollectionViewController.m; sourceTree = "<group>"; };
+		F551F4531B0F724F00D4B660 /* POLNotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POLNotesViewController.h; sourceTree = "<group>"; };
+		F551F4541B0F724F00D4B660 /* POLNotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POLNotesViewController.m; sourceTree = "<group>"; };
+		F551F4561B0F883C00D4B660 /* POLNoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POLNoteViewController.h; sourceTree = "<group>"; };
+		F551F4571B0F883C00D4B660 /* POLNoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POLNoteViewController.m; sourceTree = "<group>"; };
+		F551F4581B0F883C00D4B660 /* POLNoteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = POLNoteViewController.xib; sourceTree = "<group>"; };
+		F55DAF851AF8C37D00D7B5EA /* POLBooksTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POLBooksTableViewController.h; sourceTree = "<group>"; };
+		F55DAF861AF8C37D00D7B5EA /* POLBooksTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POLBooksTableViewController.m; sourceTree = "<group>"; };
+		F55DAF871AF8C37D00D7B5EA /* POLBooksTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = POLBooksTableViewController.xib; sourceTree = "<group>"; };
+		F55DAF8B1AF8E57C00D7B5EA /* POLBooksTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POLBooksTableViewCell.h; sourceTree = "<group>"; };
+		F55DAF8C1AF8E57C00D7B5EA /* POLBooksTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POLBooksTableViewCell.m; sourceTree = "<group>"; };
+		F55DAF8D1AF8E57C00D7B5EA /* POLBooksTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = POLBooksTableViewCell.xib; sourceTree = "<group>"; };
+		F55DAF921AF8EB9400D7B5EA /* no-image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "no-image.png"; sourceTree = "<group>"; };
+		F55DAF941AF908E400D7B5EA /* Constaint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constaint.h; sourceTree = "<group>"; };
+		F55DAF951AF9168B00D7B5EA /* POLBooksTableViewHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POLBooksTableViewHeader.h; sourceTree = "<group>"; };
+		F55DAF961AF9168B00D7B5EA /* POLBooksTableViewHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POLBooksTableViewHeader.m; sourceTree = "<group>"; };
+		F55DAF971AF9168B00D7B5EA /* POLBooksTableViewHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = POLBooksTableViewHeader.xib; sourceTree = "<group>"; };
+		F55DAF9A1AF920DF00D7B5EA /* _POLImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _POLImage.h; sourceTree = "<group>"; };
+		F55DAF9B1AF920DF00D7B5EA /* _POLImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _POLImage.m; sourceTree = "<group>"; };
+		F55DAF9D1AF920F300D7B5EA /* POLImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POLImage.h; sourceTree = "<group>"; };
+		F55DAF9E1AF920F300D7B5EA /* POLImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POLImage.m; sourceTree = "<group>"; };
+		F55DAFA01AF93F8C00D7B5EA /* POLBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POLBookViewController.h; sourceTree = "<group>"; };
+		F55DAFA11AF93F8C00D7B5EA /* POLBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POLBookViewController.m; sourceTree = "<group>"; };
+		F55DAFA21AF93F8C00D7B5EA /* POLBookViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = POLBookViewController.xib; sourceTree = "<group>"; };
+		F5D0F1651B2829CF003AED9D /* POLMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POLMapViewController.h; sourceTree = "<group>"; };
+		F5D0F1661B2829CF003AED9D /* POLMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POLMapViewController.m; sourceTree = "<group>"; };
+		F5D0F1671B2829CF003AED9D /* POLMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = POLMapViewController.xib; sourceTree = "<group>"; };
+		F5E4BE6F1AF777A80021B1D7 /* HackerBookPro2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackerBookPro2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5E4BE731AF777A80021B1D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5E4BE741AF777A80021B1D7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F5E4BE761AF777A80021B1D7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F5E4BE771AF777A80021B1D7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F5E4BE7F1AF777A80021B1D7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F5E4BE821AF777A80021B1D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		F5E4BE881AF777A80021B1D7 /* HackerBookPro2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackerBookPro2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5E4BE8D1AF777A80021B1D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5E4BE8E1AF777A80021B1D7 /* HackerBookPro2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HackerBookPro2Tests.m; sourceTree = "<group>"; };
+		F5E4BE9A1AF779360021B1D7 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		F5E4BE9C1AF77B350021B1D7 /* _POLAuthor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _POLAuthor.h; sourceTree = "<group>"; };
+		F5E4BE9D1AF77B350021B1D7 /* _POLAuthor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _POLAuthor.m; sourceTree = "<group>"; };
+		F5E4BE9E1AF77B350021B1D7 /* _POLBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _POLBook.h; sourceTree = "<group>"; };
+		F5E4BE9F1AF77B350021B1D7 /* _POLBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _POLBook.m; sourceTree = "<group>"; };
+		F5E4BEA01AF77B350021B1D7 /* _POLTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _POLTag.h; sourceTree = "<group>"; };
+		F5E4BEA11AF77B350021B1D7 /* _POLTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _POLTag.m; sourceTree = "<group>"; };
+		F5E4BEA51AF77B4C0021B1D7 /* POLAuthor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POLAuthor.h; sourceTree = "<group>"; };
+		F5E4BEA61AF77B4C0021B1D7 /* POLAuthor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POLAuthor.m; sourceTree = "<group>"; };
+		F5E4BEA71AF77B4C0021B1D7 /* POLBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POLBook.h; sourceTree = "<group>"; };
+		F5E4BEA81AF77B4C0021B1D7 /* POLBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POLBook.m; sourceTree = "<group>"; };
+		F5E4BEA91AF77B4C0021B1D7 /* POLTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POLTag.h; sourceTree = "<group>"; };
+		F5E4BEAA1AF77B4C0021B1D7 /* POLTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POLTag.m; sourceTree = "<group>"; };
+		F5E4BEAF1AF77D970021B1D7 /* POLCoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POLCoreDataStack.h; sourceTree = "<group>"; };
+		F5E4BEB01AF77D970021B1D7 /* POLCoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POLCoreDataStack.m; sourceTree = "<group>"; };
+		F5E4BEB11AF77D970021B1D7 /* POLCoreDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POLCoreDataTableViewController.h; sourceTree = "<group>"; };
+		F5E4BEB21AF77D970021B1D7 /* POLCoreDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POLCoreDataTableViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F5E4BE6C1AF777A80021B1D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5E4BE851AF777A80021B1D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F55DAF731AF89D4A00D7B5EA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F55DAF851AF8C37D00D7B5EA /* POLBooksTableViewController.h */,
+				F55DAF861AF8C37D00D7B5EA /* POLBooksTableViewController.m */,
+				F55DAF871AF8C37D00D7B5EA /* POLBooksTableViewController.xib */,
+				F55DAFA01AF93F8C00D7B5EA /* POLBookViewController.h */,
+				F55DAFA11AF93F8C00D7B5EA /* POLBookViewController.m */,
+				F55DAFA21AF93F8C00D7B5EA /* POLBookViewController.xib */,
+				F551F4371B0DF83800D4B660 /* POLPDFViewController.h */,
+				F551F4381B0DF83800D4B660 /* POLPDFViewController.m */,
+				F551F4391B0DF83800D4B660 /* POLPDFViewController.xib */,
+				F551F4531B0F724F00D4B660 /* POLNotesViewController.h */,
+				F551F4541B0F724F00D4B660 /* POLNotesViewController.m */,
+				F551F4561B0F883C00D4B660 /* POLNoteViewController.h */,
+				F551F4571B0F883C00D4B660 /* POLNoteViewController.m */,
+				F551F4581B0F883C00D4B660 /* POLNoteViewController.xib */,
+				F52E47CB1B187B79007FD073 /* POLPhotoViewController.h */,
+				F52E47CC1B187B79007FD073 /* POLPhotoViewController.m */,
+				F52E47CD1B187B79007FD073 /* POLPhotoViewController.xib */,
+				F5D0F1651B2829CF003AED9D /* POLMapViewController.h */,
+				F5D0F1661B2829CF003AED9D /* POLMapViewController.m */,
+				F5D0F1671B2829CF003AED9D /* POLMapViewController.xib */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		F55DAF8A1AF8E4DF00D7B5EA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F55DAF8B1AF8E57C00D7B5EA /* POLBooksTableViewCell.h */,
+				F55DAF8C1AF8E57C00D7B5EA /* POLBooksTableViewCell.m */,
+				F55DAF8D1AF8E57C00D7B5EA /* POLBooksTableViewCell.xib */,
+				F55DAF951AF9168B00D7B5EA /* POLBooksTableViewHeader.h */,
+				F55DAF961AF9168B00D7B5EA /* POLBooksTableViewHeader.m */,
+				F55DAF971AF9168B00D7B5EA /* POLBooksTableViewHeader.xib */,
+				F551F43F1B0F439900D4B660 /* POLNoteCollectionViewCell.h */,
+				F551F4401B0F439900D4B660 /* POLNoteCollectionViewCell.m */,
+				F551F4411B0F439900D4B660 /* POLNoteCollectionViewCell.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		F5E4BE661AF777A80021B1D7 = {
+			isa = PBXGroup;
+			children = (
+				F5E4BE711AF777A80021B1D7 /* HackerBookPro2 */,
+				F5E4BE8B1AF777A80021B1D7 /* HackerBookPro2Tests */,
+				F5E4BE701AF777A80021B1D7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F5E4BE701AF777A80021B1D7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5E4BE6F1AF777A80021B1D7 /* HackerBookPro2.app */,
+				F5E4BE881AF777A80021B1D7 /* HackerBookPro2Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F5E4BE711AF777A80021B1D7 /* HackerBookPro2 */ = {
+			isa = PBXGroup;
+			children = (
+				F55DAF921AF8EB9400D7B5EA /* no-image.png */,
+				F52BD90E1B166B5000253009 /* localization.png */,
+				F52BD90F1B166B5000253009 /* localization@2x.png */,
+				F52BD9101B166B5000253009 /* localization@3x.png */,
+				F52E47D01B1A0A3E007FD073 /* no_photo.png */,
+				F52E47D11B1A0A3E007FD073 /* no_photo@2x.png */,
+				F52E47D21B1A0A3E007FD073 /* no_photo@3x.png */,
+				F55DAF8A1AF8E4DF00D7B5EA /* Views */,
+				F55DAF731AF89D4A00D7B5EA /* Controllers */,
+				F5E4BE981AF779230021B1D7 /* Model */,
+				F5E4BE761AF777A80021B1D7 /* AppDelegate.h */,
+				F5E4BE771AF777A80021B1D7 /* AppDelegate.m */,
+				F55DAF941AF908E400D7B5EA /* Constaint.h */,
+				F5E4BE7F1AF777A80021B1D7 /* Images.xcassets */,
+				F5E4BE811AF777A80021B1D7 /* LaunchScreen.xib */,
+				F5E4BE721AF777A80021B1D7 /* Supporting Files */,
+			);
+			path = HackerBookPro2;
+			sourceTree = "<group>";
+		};
+		F5E4BE721AF777A80021B1D7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F5E4BE731AF777A80021B1D7 /* Info.plist */,
+				F5E4BE741AF777A80021B1D7 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F5E4BE8B1AF777A80021B1D7 /* HackerBookPro2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F5E4BE8E1AF777A80021B1D7 /* HackerBookPro2Tests.m */,
+				F5E4BE8C1AF777A80021B1D7 /* Supporting Files */,
+			);
+			path = HackerBookPro2Tests;
+			sourceTree = "<group>";
+		};
+		F5E4BE8C1AF777A80021B1D7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F5E4BE8D1AF777A80021B1D7 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F5E4BE981AF779230021B1D7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F5E4BE991AF779360021B1D7 /* Model.xcdatamodeld */,
+				F5E4BEAE1AF77B560021B1D7 /* Machine */,
+				F551F4311B0DF4A500D4B660 /* POLPDF.h */,
+				F551F4321B0DF4A500D4B660 /* POLPDF.m */,
+				F534F4731B1DBBD500C6E13C /* POLLocation.h */,
+				F534F4741B1DBBD500C6E13C /* POLLocation.m */,
+				F551F4491B0F466900D4B660 /* POLNote.h */,
+				F551F44A1B0F466900D4B660 /* POLNote.m */,
+				F5E4BEA51AF77B4C0021B1D7 /* POLAuthor.h */,
+				F5E4BEA61AF77B4C0021B1D7 /* POLAuthor.m */,
+				F5E4BEA71AF77B4C0021B1D7 /* POLBook.h */,
+				F5E4BEA81AF77B4C0021B1D7 /* POLBook.m */,
+				F5E4BEA91AF77B4C0021B1D7 /* POLTag.h */,
+				F5E4BEAA1AF77B4C0021B1D7 /* POLTag.m */,
+				F55DAF9D1AF920F300D7B5EA /* POLImage.h */,
+				F55DAF9E1AF920F300D7B5EA /* POLImage.m */,
+				F5E4BEAF1AF77D970021B1D7 /* POLCoreDataStack.h */,
+				F5E4BEB01AF77D970021B1D7 /* POLCoreDataStack.m */,
+				F5E4BEB11AF77D970021B1D7 /* POLCoreDataTableViewController.h */,
+				F5E4BEB21AF77D970021B1D7 /* POLCoreDataTableViewController.m */,
+				F551F44F1B0F71D900D4B660 /* POLCoreDataCollectionViewController.h */,
+				F551F4501B0F71D900D4B660 /* POLCoreDataCollectionViewController.m */,
+				F534F4701B1DB88C00C6E13C /* POLAnotation.h */,
+				F534F4711B1DB88C00C6E13C /* POLAnotation.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F5E4BEAE1AF77B560021B1D7 /* Machine */ = {
+			isa = PBXGroup;
+			children = (
+				F534F4761B1DBBE400C6E13C /* _POLLocation.h */,
+				F534F4771B1DBBE400C6E13C /* _POLLocation.m */,
+				F52E47D61B1A143D007FD073 /* _POLNoteImage.h */,
+				F52E47D71B1A143D007FD073 /* _POLNoteImage.m */,
+				F551F4461B0F465500D4B660 /* _POLNote.h */,
+				F551F4471B0F465500D4B660 /* _POLNote.m */,
+				F551F4341B0DF4B600D4B660 /* _POLPDF.h */,
+				F551F4351B0DF4B600D4B660 /* _POLPDF.m */,
+				F5E4BE9C1AF77B350021B1D7 /* _POLAuthor.h */,
+				F5E4BE9D1AF77B350021B1D7 /* _POLAuthor.m */,
+				F5E4BE9E1AF77B350021B1D7 /* _POLBook.h */,
+				F5E4BE9F1AF77B350021B1D7 /* _POLBook.m */,
+				F5E4BEA01AF77B350021B1D7 /* _POLTag.h */,
+				F5E4BEA11AF77B350021B1D7 /* _POLTag.m */,
+				F55DAF9A1AF920DF00D7B5EA /* _POLImage.h */,
+				F55DAF9B1AF920DF00D7B5EA /* _POLImage.m */,
+			);
+			name = Machine;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F5E4BE6E1AF777A80021B1D7 /* HackerBookPro2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5E4BE921AF777A80021B1D7 /* Build configuration list for PBXNativeTarget "HackerBookPro2" */;
+			buildPhases = (
+				F5E4BE6B1AF777A80021B1D7 /* Sources */,
+				F5E4BE6C1AF777A80021B1D7 /* Frameworks */,
+				F5E4BE6D1AF777A80021B1D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HackerBookPro2;
+			productName = HackerBookPro2;
+			productReference = F5E4BE6F1AF777A80021B1D7 /* HackerBookPro2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F5E4BE871AF777A80021B1D7 /* HackerBookPro2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5E4BE951AF777A80021B1D7 /* Build configuration list for PBXNativeTarget "HackerBookPro2Tests" */;
+			buildPhases = (
+				F5E4BE841AF777A80021B1D7 /* Sources */,
+				F5E4BE851AF777A80021B1D7 /* Frameworks */,
+				F5E4BE861AF777A80021B1D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5E4BE8A1AF777A80021B1D7 /* PBXTargetDependency */,
+			);
+			name = HackerBookPro2Tests;
+			productName = HackerBookPro2Tests;
+			productReference = F5E4BE881AF777A80021B1D7 /* HackerBookPro2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F5E4BE671AF777A80021B1D7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Pawel Walicki";
+				TargetAttributes = {
+					F5E4BE6E1AF777A80021B1D7 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					F5E4BE871AF777A80021B1D7 = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = F5E4BE6E1AF777A80021B1D7;
+					};
+				};
+			};
+			buildConfigurationList = F5E4BE6A1AF777A80021B1D7 /* Build configuration list for PBXProject "HackerBookPro2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F5E4BE661AF777A80021B1D7;
+			productRefGroup = F5E4BE701AF777A80021B1D7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F5E4BE6E1AF777A80021B1D7 /* HackerBookPro2 */,
+				F5E4BE871AF777A80021B1D7 /* HackerBookPro2Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F5E4BE6D1AF777A80021B1D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F55DAF931AF8EB9400D7B5EA /* no-image.png in Resources */,
+				F55DAF891AF8C37D00D7B5EA /* POLBooksTableViewController.xib in Resources */,
+				F5E4BE831AF777A80021B1D7 /* LaunchScreen.xib in Resources */,
+				F52E47D51B1A0A3E007FD073 /* no_photo@3x.png in Resources */,
+				F52E47CF1B187B79007FD073 /* POLPhotoViewController.xib in Resources */,
+				F55DAF991AF9168B00D7B5EA /* POLBooksTableViewHeader.xib in Resources */,
+				F551F45A1B0F883C00D4B660 /* POLNoteViewController.xib in Resources */,
+				F55DAFA41AF93F8C00D7B5EA /* POLBookViewController.xib in Resources */,
+				F52E47D31B1A0A3E007FD073 /* no_photo.png in Resources */,
+				F551F43B1B0DF83800D4B660 /* POLPDFViewController.xib in Resources */,
+				F5D0F1691B2829CF003AED9D /* POLMapViewController.xib in Resources */,
+				F52BD9141B166B5000253009 /* localization.png in Resources */,
+				F551F4431B0F439900D4B660 /* POLNoteCollectionViewCell.xib in Resources */,
+				F52BD9161B166B5000253009 /* localization@3x.png in Resources */,
+				F55DAF8F1AF8E57C00D7B5EA /* POLBooksTableViewCell.xib in Resources */,
+				F5E4BE801AF777A80021B1D7 /* Images.xcassets in Resources */,
+				F52E47D41B1A0A3E007FD073 /* no_photo@2x.png in Resources */,
+				F52BD9151B166B5000253009 /* localization@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5E4BE861AF777A80021B1D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F5E4BE6B1AF777A80021B1D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F551F4421B0F439900D4B660 /* POLNoteCollectionViewCell.m in Sources */,
+				F551F4331B0DF4A500D4B660 /* POLPDF.m in Sources */,
+				F5E4BEB41AF77D970021B1D7 /* POLCoreDataTableViewController.m in Sources */,
+				F5E4BEA31AF77B350021B1D7 /* _POLBook.m in Sources */,
+				F5E4BEAC1AF77B4C0021B1D7 /* POLBook.m in Sources */,
+				F55DAF9C1AF920DF00D7B5EA /* _POLImage.m in Sources */,
+				F534F4781B1DBBE400C6E13C /* _POLLocation.m in Sources */,
+				F5E4BEAD1AF77B4C0021B1D7 /* POLTag.m in Sources */,
+				F5E4BEA41AF77B350021B1D7 /* _POLTag.m in Sources */,
+				F55DAFA31AF93F8C00D7B5EA /* POLBookViewController.m in Sources */,
+				F55DAF981AF9168B00D7B5EA /* POLBooksTableViewHeader.m in Sources */,
+				F551F43A1B0DF83800D4B660 /* POLPDFViewController.m in Sources */,
+				F5E4BEB31AF77D970021B1D7 /* POLCoreDataStack.m in Sources */,
+				F52E47CE1B187B79007FD073 /* POLPhotoViewController.m in Sources */,
+				F551F44B1B0F466900D4B660 /* POLNote.m in Sources */,
+				F5E4BEA21AF77B350021B1D7 /* _POLAuthor.m in Sources */,
+				F551F4591B0F883C00D4B660 /* POLNoteViewController.m in Sources */,
+				F534F4721B1DB88C00C6E13C /* POLAnotation.m in Sources */,
+				F551F4481B0F465500D4B660 /* _POLNote.m in Sources */,
+				F55DAF8E1AF8E57C00D7B5EA /* POLBooksTableViewCell.m in Sources */,
+				F5E4BEAB1AF77B4C0021B1D7 /* POLAuthor.m in Sources */,
+				F551F4521B0F71E800D4B660 /* POLCoreDataCollectionViewController.m in Sources */,
+				F551F4551B0F724F00D4B660 /* POLNotesViewController.m in Sources */,
+				F5E4BE781AF777A80021B1D7 /* AppDelegate.m in Sources */,
+				F5E4BE751AF777A80021B1D7 /* main.m in Sources */,
+				F5D0F1681B2829CF003AED9D /* POLMapViewController.m in Sources */,
+				F534F4751B1DBBD500C6E13C /* POLLocation.m in Sources */,
+				F55DAF881AF8C37D00D7B5EA /* POLBooksTableViewController.m in Sources */,
+				F5E4BE9B1AF779360021B1D7 /* Model.xcdatamodeld in Sources */,
+				F52E47D81B1A143D007FD073 /* _POLNoteImage.m in Sources */,
+				F55DAF9F1AF920F300D7B5EA /* POLImage.m in Sources */,
+				F551F4361B0DF4B600D4B660 /* _POLPDF.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5E4BE841AF777A80021B1D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5E4BE8F1AF777A80021B1D7 /* HackerBookPro2Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F5E4BE8A1AF777A80021B1D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5E4BE6E1AF777A80021B1D7 /* HackerBookPro2 */;
+			targetProxy = F5E4BE891AF777A80021B1D7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F5E4BE811AF777A80021B1D7 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5E4BE821AF777A80021B1D7 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F5E4BE901AF777A80021B1D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F5E4BE911AF777A80021B1D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F5E4BE931AF777A80021B1D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = HackerBookPro2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F5E4BE941AF777A80021B1D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = HackerBookPro2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F5E4BE961AF777A80021B1D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HackerBookPro2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HackerBookPro2.app/HackerBookPro2";
+			};
+			name = Debug;
+		};
+		F5E4BE971AF777A80021B1D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HackerBookPro2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HackerBookPro2.app/HackerBookPro2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F5E4BE6A1AF777A80021B1D7 /* Build configuration list for PBXProject "HackerBookPro2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5E4BE901AF777A80021B1D7 /* Debug */,
+				F5E4BE911AF777A80021B1D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5E4BE921AF777A80021B1D7 /* Build configuration list for PBXNativeTarget "HackerBookPro2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5E4BE931AF777A80021B1D7 /* Debug */,
+				F5E4BE941AF777A80021B1D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5E4BE951AF777A80021B1D7 /* Build configuration list for PBXNativeTarget "HackerBookPro2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5E4BE961AF777A80021B1D7 /* Debug */,
+				F5E4BE971AF777A80021B1D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F5E4BE991AF779360021B1D7 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F5E4BE9A1AF779360021B1D7 /* Model.xcdatamodel */,
+			);
+			currentVersion = F5E4BE9A1AF779360021B1D7 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F5E4BE671AF777A80021B1D7 /* Project object */;
+}

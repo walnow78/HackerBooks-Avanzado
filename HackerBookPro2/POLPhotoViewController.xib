@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="POLPhotoViewController">
+            <connections>
+                <outlet property="imageView" destination="hw6-F2-dxu" id="gAH-YH-7ef"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hw6-F2-dxu">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mmM-eb-TOR">
+                    <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                    <items>
+                        <barButtonItem systemItem="camera" id="ePa-VQ-xEs">
+                            <connections>
+                                <action selector="photoButton:" destination="-1" id="zfN-Xg-RQg"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="dl8-Yn-Jbv"/>
+                        <barButtonItem systemItem="trash" id="dX2-WF-7vk">
+                            <connections>
+                                <action selector="deleteButton:" destination="-1" id="kRf-sB-LeW"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="hw6-F2-dxu" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="1gj-eM-RUP"/>
+                <constraint firstItem="mmM-eb-TOR" firstAttribute="bottom" secondItem="hw6-F2-dxu" secondAttribute="bottom" id="49T-ci-MfZ"/>
+                <constraint firstAttribute="trailing" secondItem="hw6-F2-dxu" secondAttribute="trailing" id="Ycl-Dh-xtF"/>
+                <constraint firstItem="mmM-eb-TOR" firstAttribute="trailing" secondItem="hw6-F2-dxu" secondAttribute="trailing" id="ZCz-wQ-H8A"/>
+                <constraint firstItem="mmM-eb-TOR" firstAttribute="leading" secondItem="hw6-F2-dxu" secondAttribute="leading" id="j24-bz-DH1"/>
+                <constraint firstAttribute="bottom" secondItem="mmM-eb-TOR" secondAttribute="bottom" id="uCO-dg-Tii"/>
+                <constraint firstItem="mmM-eb-TOR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="uaJ-Qc-YcP"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
