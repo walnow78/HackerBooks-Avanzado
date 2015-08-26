@@ -11,6 +11,8 @@
 #define NOTIFICATION_CHANGE_FAVORITE @"notificationChangeFavorite"
 #define KEY_NOTIFICATION_CHANGE_FAVORITE @"keyChangeFavorite"
 
+#define NOTIFICATION_CHANGE_FAVORITE_FROM_BOOK @"notificationChangeFavoriteFromBook"
+
 // Notificaciones del cambio de la tabla
 
 #define NOTIFICATION_CHANGE_ROW_TABLE_VIEW @"notificationChangeRowTableView"

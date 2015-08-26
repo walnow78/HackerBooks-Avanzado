@@ -154,13 +154,13 @@
         
     }
     
-    NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
-    
-    // Notifico el cambio del favorito.
-    
-    [nc postNotificationName:NOTIFICATION_CHANGE_FAVORITE
-                      object:self
-                    userInfo:@{KEY_NOTIFICATION_CHANGE_FAVORITE : self}];
+//    NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
+//    
+//    // Notifico el cambio del favorito.
+//    
+//    [nc postNotificationName:NOTIFICATION_CHANGE_FAVORITE
+//                      object:self
+//                    userInfo:@{KEY_NOTIFICATION_CHANGE_FAVORITE : self}];
 
 }
 

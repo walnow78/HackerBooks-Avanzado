@@ -91,9 +91,19 @@
 
 - (IBAction)favoriteButton:(id)sender {
     
-    [self.model changeFavorite];
-
+//    [self.model changeFavorite];
     
+    self.model.isFavoriteValue = !self.model.isFavoriteValue;
+    [self syncViewModel];
+    
+        NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
+    
+        // Notifico el cambio del favorito.
+    
+        [nc postNotificationName:NOTIFICATION_CHANGE_FAVORITE
+                          object:self
+                        userInfo:@{KEY_NOTIFICATION_CHANGE_FAVORITE : self.model}];
+
 }
 
 

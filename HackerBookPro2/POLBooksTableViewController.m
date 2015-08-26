@@ -63,6 +63,10 @@
            selector:@selector(didChangeStateFavorite:)
                name:NOTIFICATION_CHANGE_FAVORITE object:nil];
     
+    [nc addObserver:self
+           selector:@selector(didChangeStateFavorite:)
+               name:NOTIFICATION_CHANGE_FAVORITE_FROM_BOOK object:nil];
+    
 }
 
 - (void)viewWillDisappear:(BOOL)animated{
@@ -183,6 +187,7 @@
         
         requestTag.predicate = [NSPredicate predicateWithFormat:@"book.title CONTAINS[cd] %@", filter];
     }
+    
     NSSortDescriptor *tag = [NSSortDescriptor sortDescriptorWithKey:POLTagAttributes.name
                                                           ascending:YES
                                                            selector:@selector(compare:)];
@@ -207,8 +212,12 @@
 
 - (void)didChangeStateFavorite:(NSNotification*) info{
     
+    [self filterResulWithFilter:@""];
+    
     [self.tableView reloadData];
 }
+
+
 
 #pragma mark POLBooksTableViewControllerDelegate
 

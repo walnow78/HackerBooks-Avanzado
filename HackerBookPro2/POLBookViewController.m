@@ -88,6 +88,16 @@
     
     [self syncViewModel];
     
+    // Notifico a la tabla el cambio para que recague
+    
+        NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
+    
+        // Notifico el cambio del favorito.
+    
+        [nc postNotificationName:NOTIFICATION_CHANGE_FAVORITE_FROM_BOOK
+                          object:self
+                        userInfo:nil];
+    
 
     
 }
@@ -96,7 +106,21 @@
 
 - (IBAction)favoriteButton:(id)sender {
     
-    [self.model changeFavorite];
+    self.model.isFavoriteValue = !self.model.isFavoriteValue;
+    
+    [self syncViewModel];
+    
+        NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
+    
+        // Notifico el cambio del favorito.
+    
+        [nc postNotificationName:NOTIFICATION_CHANGE_FAVORITE_FROM_BOOK
+                          object:self
+                        userInfo:@{KEY_NOTIFICATION_CHANGE_FAVORITE : self}];
+    
+    
+    
+    //[self.model changeFavorite];
     
 }
 
@@ -189,11 +213,14 @@
     
     POLBook *book = [dic objectForKey:KEY_NOTIFICATION_CHANGE_FAVORITE];
     
-    if (book.isFavoriteValue) {
-        [self.favoriteView setTintColor:[UIColor orangeColor]];
-    }else{
-        [self.favoriteView setTintColor:[UIColor blackColor]];
-
+    if (book == self.model) {
+        
+        if (book.isFavoriteValue) {
+            [self.favoriteView setTintColor:[UIColor orangeColor]];
+        }else{
+            [self.favoriteView setTintColor:[UIColor blackColor]];
+            
+        }
     }
     
 }
