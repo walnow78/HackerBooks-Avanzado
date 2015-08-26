@@ -39,6 +39,8 @@
     
     self.searchBar.delegate = self;
     
+    [self filterResulWithFilter:@""];
+    
 }
 
 -(instancetype) initWithContext:(NSManagedObjectContext*) context style:(UITableViewStyle) style{
@@ -165,12 +167,21 @@
 #pragma mark - UISearchBarDelegate
 
 - (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText{
+    
+    [self filterResulWithFilter:searchText];
 
+}
+
+#pragma mark - Private
+
+-(void) filterResulWithFilter:(NSString*) filter{
+    
+    
     NSFetchRequest *requestTag = [NSFetchRequest fetchRequestWithEntityName:[POLTag entityName]];
     
-    if (![searchText isEqual:@""]){
-    
-    requestTag.predicate = [NSPredicate predicateWithFormat:@"book.title CONTAINS[cd] %@", searchText];
+    if (![filter isEqual:@""]){
+        
+        requestTag.predicate = [NSPredicate predicateWithFormat:@"book.title CONTAINS[cd] %@", filter];
     }
     NSSortDescriptor *tag = [NSSortDescriptor sortDescriptorWithKey:POLTagAttributes.name
                                                           ascending:YES
@@ -185,31 +196,11 @@
                                                                            sectionNameKeyPath:nil
                                                                                     cacheName:nil];
     
-    NSError *err;
     
-    NSArray *datos = [self.context executeFetchRequest:requestTag error:&err];
-    
-    
-        if (err) {
-            NSLog(@"Error");
-        }else{
-            
-            for (POLTag *each in datos) {
-                
-                for (POLBook *b in each.book) {
-                    NSLog(@"%@", b.title);
-                }
-                
-            }
-            
-        }
-
-
     
     self.fetchedResultsController = fc;
 
 }
-
 
 
 #pragma mark - Notification
@@ -228,6 +219,7 @@
     [self.navigationController pushViewController:bookVC animated:YES];
     
 }
+
 
 
 @end
