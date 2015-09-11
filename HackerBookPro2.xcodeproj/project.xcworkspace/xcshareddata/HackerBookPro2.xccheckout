@@ -10,29 +10,29 @@
 	<string>HackerBookPro2</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>D90E689192AFEDF5650DF04D48FCF24D4800A72E</key>
-		<string>https://github.com/walnow78/HacerkBookPro2.git</string>
+		<key>0F98CDB2C904713F3BAE14EF64E8751A1EB90CEF</key>
+		<string>https://github.com/walnow78/HackerBookInt.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>HackerBookPro2.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>D90E689192AFEDF5650DF04D48FCF24D4800A72E</key>
+		<key>0F98CDB2C904713F3BAE14EF64E8751A1EB90CEF</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/walnow78/HacerkBookPro2.git</string>
+	<string>https://github.com/walnow78/HackerBookInt.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>D90E689192AFEDF5650DF04D48FCF24D4800A72E</string>
+	<string>0F98CDB2C904713F3BAE14EF64E8751A1EB90CEF</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>D90E689192AFEDF5650DF04D48FCF24D4800A72E</string>
+			<string>0F98CDB2C904713F3BAE14EF64E8751A1EB90CEF</string>
 			<key>IDESourceControlWCCName</key>
 			<string>HackerBookPro2</string>
 		</dict>

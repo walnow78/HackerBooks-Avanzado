@@ -78,12 +78,6 @@
 
 #pragma mark - Datasource
 
--(NSInteger) numberOfSectionsInTableView:(UITableView *)tableView{
-
-    return [self.fetchedResultsController.fetchedObjects count];
-
-}
-
 -(NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
 
     // Recupero el tag actual
@@ -183,9 +177,11 @@
     
     NSFetchRequest *requestTag = [NSFetchRequest fetchRequestWithEntityName:[POLTag entityName]];
     
+    
+    
     if (![filter isEqual:@""]){
         
-        requestTag.predicate = [NSPredicate predicateWithFormat:@"book.title CONTAINS[cd] %@", filter];
+        requestTag.predicate = [NSPredicate predicateWithFormat:@"ANY book.title CONTAINS %@", filter];
     }
     
     NSSortDescriptor *tag = [NSSortDescriptor sortDescriptorWithKey:POLTagAttributes.name
@@ -204,6 +200,8 @@
     
     
     self.fetchedResultsController = fc;
+    
+    [self.fetchedResultsController performFetch:nil];
 
 }
 
@@ -212,7 +210,7 @@
 
 - (void)didChangeStateFavorite:(NSNotification*) info{
     
-    [self filterResulWithFilter:@""];
+  //  [self filterResulWithFilter:@""];
     
     [self.tableView reloadData];
 }

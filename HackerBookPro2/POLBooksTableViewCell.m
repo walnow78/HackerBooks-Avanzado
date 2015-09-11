@@ -91,9 +91,24 @@
 
 - (IBAction)favoriteButton:(id)sender {
     
-//    [self.model changeFavorite];
+    POLTag *tag = [POLTag tagInitWithName:@"Favorite" context:self.model.managedObjectContext];
+    
+    if (self.model.isFavoriteValue == YES) {
+        // En caso que el libro sea favorito, le quito el tag de favorito
+        
+        [self.model removeTagObject:tag];
+        
+        if ([[tag.book allObjects] count] == 0) {
+            
+            [self.model.managedObjectContext deleteObject:tag];
+        }
+        
+    }else{
+        [self.model addTagObject:tag];
+    }
     
     self.model.isFavoriteValue = !self.model.isFavoriteValue;
+    
     [self syncViewModel];
     
         NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];

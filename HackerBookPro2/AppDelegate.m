@@ -59,14 +59,7 @@
                                                            selector:@selector(compare:)]];
     
     
-    NSFetchedResultsController *fc = [[NSFetchedResultsController alloc] initWithFetchRequest:requestTag
-                                                                         managedObjectContext:self.stack.context
-                                                                           sectionNameKeyPath:nil
-                                                                                    cacheName:nil];
     // Creo los VC
-    
-    //POLBooksTableViewController *booksVC = [[POLBooksTableViewController alloc] initWithFetchedResultsController:fc
-    //                                                                                            style:UITableViewStylePlain];
     
     POLBooksTableViewController *booksVC = [[POLBooksTableViewController alloc] initWithContext:self.stack.context style:UITableViewStylePlain];
 
